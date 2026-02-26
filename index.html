@@ -63,6 +63,15 @@
         .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
         .hamburger { display: none; background: none; border: none; cursor: pointer; padding: 4px; }
         .hamburger span { display: block; width: 22px; height: 2px; background: var(--primary); margin: 5px 0; transition: 0.3s; }
+        .nav-cta {
+            display: inline-flex; align-items: center; gap: 0.4rem;
+            background: var(--accent); color: #fff; text-decoration: none;
+            font-size: 0.8rem; font-weight: 600; letter-spacing: 0.3px;
+            padding: 0.45rem 1rem; border-radius: 6px;
+            transition: background 0.2s, box-shadow 0.2s;
+            white-space: nowrap; box-shadow: 0 2px 8px rgba(37,99,235,0.25);
+        }
+        .nav-cta:hover { background: #1d4ed8; box-shadow: 0 4px 14px rgba(37,99,235,0.35); }
 
         /* Hero */
         .hero {
@@ -276,6 +285,7 @@
             .nav-links { display: none; position: absolute; top: 64px; left: 0; right: 0; background: white; flex-direction: column; padding: 1.5rem 2rem; gap: 1rem; border-bottom: 1px solid var(--border); }
             .nav-links.open { display: flex; }
             .hamburger { display: block; }
+            .nav-cta { font-size: 0.72rem; padding: 0.4rem 0.7rem; }
             .hero-stats { gap: 1.5rem; flex-wrap: wrap; }
             .about-grid, .skills-sections, .edu-grid { grid-template-columns: 1fr; }
             .strengths-grid { grid-template-columns: 1fr; }
@@ -301,6 +311,7 @@
             <li><a href="#education">Education</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
+        <a href="ceo-scenario-planner.html" class="nav-cta">CEO Scenario Planner ↗</a>
         <button class="hamburger" id="hamburger" aria-label="Menu">
             <span></span><span></span><span></span>
         </button>
